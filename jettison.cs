@@ -97,7 +97,7 @@ function jettisonStringify(%type, %value) {
       return "\"" @ %out @ "\"";
 
     case "number":
-      return strLen(%value) ? %value : "NULL";
+      return strLen(%value) ? %value : "null";
 
     case "object":
       return %value.toJSON();
